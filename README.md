@@ -1,6 +1,16 @@
-# Prompt Usage Analytics
+# 🤖 Prompt Pal
 
-A Chrome Extension (Manifest V3) that logs LLM prompts and response metadata across popular AI platforms.
+> A cute Chrome Extension that logs LLM prompts and helps you optimize your AI workflow
+
+**[🌐 Website](https://yourusername.github.io/prompt-pal)** | **[⬇️ Chrome Web Store](https://chrome.google.com/webstore)** | **[⭐ GitHub](https://github.com/yourusername/prompt-pal)**
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Chrome](https://img.shields.io/badge/chrome-%E2%9C%93-brightgreen.svg)
+
+Prompt Pal is a friendly Chrome extension that tracks your LLM prompts across popular AI platforms, calculates efficiency scores, and helps you become a prompt engineering pro—all while keeping your data 100% private.
+
+![Extension Preview](./landing-page/screenshot.png)
 
 ## Features
 
@@ -80,20 +90,24 @@ The success score is calculated as: `tokens_in / tokens_out`
 - Stored in `chrome.storage.local` (unlimited in theory, but capped for performance)
 - Prompts truncated to **500 characters** to save space
 
-## File Structure
+## 📁 File Structure
 
 ```
 prompt-usage-analytics/
-├── manifest.json       # Extension configuration
-├── background.js       # Service worker for request capture
-├── popup.html          # Dashboard HTML
-├── popup.js            # Dashboard logic
-├── popup.css           # Dashboard styles
-├── icons/              # Extension icons
+├── manifest.json          # Extension configuration
+├── background.js          # Service worker for request capture
+├── popup.html             # Dashboard HTML
+├── popup.js               # Dashboard logic
+├── popup.css              # Dashboard styles
+├── icons/                 # Extension icons
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
-└── README.md           # This file
+├── landing-page/          # 🌐 Marketing website
+│   └── index.html         # Cute landing page
+├── PUBLISHING.md          # 🚀 Guide to publish extension
+├── LICENSE                # MIT License
+└── README.md              # This file
 ```
 
 ## Development
@@ -141,22 +155,60 @@ The extension automatically prunes old logs when reaching 1,000 entries. To manu
 1. Open the popup
 2. Click "Clear All" button
 
-## License
+## 🌐 Landing Page
+
+We've included a cute, animated landing page in the `landing-page/` folder:
+
+- **Modern Design**: Gradient backgrounds, floating shapes, smooth animations
+- **Responsive**: Works on all devices
+- **SEO Ready**: Meta tags, Open Graph, structured for search engines
+- **Easy Deploy**: Ready for GitHub Pages
+
+To deploy:
+1. Enable GitHub Pages in repo settings
+2. Your site will be live at `https://yourusername.github.io/prompt-pal`
+
+See [PUBLISHING.md](./PUBLISHING.md) for detailed instructions.
+
+## 🚀 Publishing
+
+Want to share Prompt Pal with the world? Check out our comprehensive [Publishing Guide](./PUBLISHING.md) which includes:
+
+- 📦 Creating a GitHub repository
+- 🌐 Deploying to GitHub Pages
+- 🏪 Publishing to Chrome Web Store
+- 📣 Marketing and launch strategy
+- 🔄 Version management
+
+## 📄 License
 
 MIT License - Feel free to use, modify, and distribute.
 
-## Contributing
+See [LICENSE](./LICENSE) for full text.
+
+## 🤝 Contributing
 
 Contributions welcome! Please:
 1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Changelog
+## 📝 Changelog
 
 ### v1.0.0
-- Initial release
-- Support for 5 major LLM platforms
-- JSON and CSV export
-- Success scoring algorithm
-- Modern popup UI
+- ✨ Initial release
+- 🤖 Support for 5 major LLM platforms
+- 📊 JSON and CSV export
+- 🎯 Success scoring algorithm
+- 🎨 Modern popup UI
+- 🌐 Cute landing page
+- 🚀 Complete publishing guide
+
+---
+
+<p align="center">
+  Made with 💜 by the Prompt Pal Team<br>
+  <a href="https://github.com/yourusername/prompt-pal">Star us on GitHub</a>
+</p>
