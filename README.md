@@ -1,5 +1,8 @@
 # 🤖 Prompt Pal
 
+<img width="1762" height="872" alt="image" src="https://github.com/user-attachments/assets/3b81a4f2-36d0-45cf-abec-86fc6b99c7ea" />
+
+
 > A cute Chrome Extension that logs LLM prompts and helps you optimize your AI workflow
 
 **[🌐 Website](https://RavaniRoshan.github.io/prompt-pal)** | **[⬇️ Chrome Web Store](https://chrome.google.com/webstore)** | **[⭐ GitHub](https://github.com/RavaniRoshan/prompt-pal)**
