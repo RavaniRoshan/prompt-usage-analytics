@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt Usage Analytics</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Prompt Usage Analytics</h2>
+    <span class="version">v1.0.0</span>
+  </div>
+  
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-value" id="totalLogs">0</span>
+      <span class="stat-label">Total Prompts</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="avgScore">-</span>
+      <span class="stat-label">Avg Score</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="sort-controls">
+      <label>Sort by:</label>
+      <select id="sortField">
+        <option value="timestamp">Time</option>
+        <option value="successScore">Score</option>
+        <option value="site">Site</option>
+        <option value="model">Model</option>
+      </select>
+      <button id="sortDir">↓</button>
+    </div>
+    <div class="filter-controls">
+      <input type="text" id="filterInput" placeholder="Filter by site or model...">
+      <button id="clearFilter">Clear</button>
+    </div>
+  </div>
+  
+  <div class="table-container">
+    <table id="logTable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Site</th>
+          <th>Model</th>
+          <th>Prompt</th>
+          <th>Tokens</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+    <p id="emptyMsg" class="empty-msg">No logs yet. Start using an LLM to capture prompts.</p>
+  </div>
+
+  <div class="actions">
+    <button id="exportJson" class="btn btn-primary">Export JSON</button>
+    <button id="exportCsv" class="btn btn-secondary">Export CSV</button>
+    <button id="clearLogs" class="btn btn-danger">Clear All</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

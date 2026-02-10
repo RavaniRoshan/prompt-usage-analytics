@@ -1,0 +1,315 @@
+/* popup.css – Modern, Clean UI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+  background: #f5f5f5;
+  width: 600px;
+  min-height: 400px;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.version {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Stats Bar */
+.stats-bar {
+  display: flex;
+  gap: 24px;
+  padding: 12px 16px;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 16px;
+}
+
+.sort-controls,
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-controls label {
+  font-size: 12px;
+  color: #666;
+}
+
+select, input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  background: white;
+}
+
+select {
+  min-width: 100px;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+#sortDir {
+  font-weight: bold;
+  padding: 6px 10px;
+}
+
+/* Table Container */
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+th {
+  background: #f8f9fa;
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+tr:hover td {
+  background: #f8f9fa;
+}
+
+/* Column Styles */
+.timestamp .time {
+  font-weight: 500;
+}
+
+.timestamp .date {
+  font-size: 11px;
+  color: #888;
+}
+
+.site {
+  font-weight: 500;
+  color: #667eea;
+}
+
+.model {
+  color: #555;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prompt {
+  max-width: 200px;
+  color: #444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tokens {
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 11px;
+  color: #666;
+}
+
+.tokens-in {
+  color: #28a745;
+}
+
+.tokens-sep {
+  margin: 0 4px;
+  color: #999;
+}
+
+.tokens-out {
+  color: #dc3545;
+}
+
+/* Score Colors */
+.score {
+  font-weight: 600;
+  text-align: center;
+}
+
+.score-good {
+  color: #28a745;
+  background: #d4edda;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.score-ok {
+  color: #ffc107;
+  background: #fff3cd;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.score-bad {
+  color: #dc3545;
+  background: #f8d7da;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.score-unknown {
+  color: #6c757d;
+}
+
+/* Empty State */
+.empty-msg {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #5a6fd6;
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+  border: none;
+  margin-left: auto;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
