@@ -251,7 +251,7 @@ Once approved:
 ### Update Landing Page
 
 Edit `landing-page/index.html`:
-- Replace `yourusername` with your actual GitHub username
+- Replace `RavaniRoshan` with your actual GitHub username
 - Update Chrome Web Store button link after approval
 - Add real screenshots
 

@@ -28,7 +28,7 @@ git push -u origin main
 git mv landing-page/index.html .
 
 # Update GitHub username in index.html
-# Find and replace: yourusername → YOUR_ACTUAL_USERNAME
+# Find and replace: RavaniRoshan → YOUR_ACTUAL_USERNAME
 
 git add -A
 git commit -m "Deploy landing page"

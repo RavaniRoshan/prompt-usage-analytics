@@ -2,7 +2,7 @@
 
 > A cute Chrome Extension that logs LLM prompts and helps you optimize your AI workflow
 
-**[🌐 Website](https://yourusername.github.io/prompt-pal)** | **[⬇️ Chrome Web Store](https://chrome.google.com/webstore)** | **[⭐ GitHub](https://github.com/yourusername/prompt-pal)**
+**[🌐 Website](https://RavaniRoshan.github.io/prompt-pal)** | **[⬇️ Chrome Web Store](https://chrome.google.com/webstore)** | **[⭐ GitHub](https://github.com/RavaniRoshan/prompt-pal)**
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -166,7 +166,7 @@ We've included a cute, animated landing page in the `landing-page/` folder:
 
 To deploy:
 1. Enable GitHub Pages in repo settings
-2. Your site will be live at `https://yourusername.github.io/prompt-pal`
+2. Your site will be live at `https://RavaniRoshan.github.io/prompt-pal`
 
 See [PUBLISHING.md](./PUBLISHING.md) for detailed instructions.
 
@@ -210,5 +210,5 @@ Contributions welcome! Please:
 
 <p align="center">
   Made with 💜 by the Prompt Pal Team<br>
-  <a href="https://github.com/yourusername/prompt-pal">Star us on GitHub</a>
+  <a href="https://github.com/RavaniRoshan/prompt-pal">Star us on GitHub</a>
 </p>
